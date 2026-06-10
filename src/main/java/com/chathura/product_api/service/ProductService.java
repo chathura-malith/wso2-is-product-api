@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface ProductService {
 
-    public void create(ProductRequestDto dto, List<MultipartFile> images);
+    public void create(ProductRequestDto dto);
 
-    public void update(Long id, ProductRequestDto dto, List<MultipartFile> images);
+    public void update(Long id, ProductRequestDto dto);
 
     public void delete(Long id);
 

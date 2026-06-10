@@ -29,6 +29,4 @@ public class Product {
     @Column(nullable = false)
     private Integer quantity;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ProductImage> images = new ArrayList<>();
 }
